@@ -1,0 +1,30 @@
+//extend
+
+@import "../utilidades/mixin";
+
+%img{
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    grid-column: span 1;
+    grid-row: span 1;
+    transition: 1s;
+}
+
+%fotografias{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-row: span 1;
+    grid-column: span 1
+}
+
+%textos{
+    @include textos;
+}
+
+%containers{
+    background-color: #9b939495;
+    @include grid(3rem, 2rem, 2rem, 2, 1);
+    align-items: center;
+}

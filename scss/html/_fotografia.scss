@@ -1,0 +1,36 @@
+//estilos fotografia
+
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+.mainFotografia{
+    @include main(190vh, 0.5rem);
+    .fotografias{
+        @include grid(1rem, 2rem, 1rem, 4 ,repeat(2, 45%));
+        background-color: #ada5a4b4;
+        .fotosUno{
+            @extend %fotografias;
+        }
+        .fotosDos{
+            @extend %fotografias;
+        }
+        .fotosTres{
+            @extend %fotografias;
+        }
+        .fotosCuatro{
+            @extend %fotografias;
+        }
+        .fotosCinco{
+            @extend %fotografias;
+        }
+        .fotosSeis{
+            @extend %fotografias;
+        }
+        .fotosSiete{
+            @extend %fotografias;
+        }
+        .fotosOcho{
+            @extend %fotografias;
+        }
+    }
+}

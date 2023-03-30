@@ -1,0 +1,35 @@
+//foter
+
+//import 
+
+@import "../utilidades/listas" ;
+
+
+footer{
+    height: auto;
+    background-color: nth($color-footer, 2 );
+    text-align: center;
+    color: nth($color-footer, 1);
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.5rem;
+    text-decoration: none;
+    list-style: none;
+    .contactame{
+        color: nth($color-footer, 1);
+        font-size: 0.9rem;
+    }
+    .redesSociales{
+        a{
+            text-decoration: none;
+            img{
+                width: 4%;
+                margin: 0.5rem;
+            }
+        }
+    }
+    .derechos{
+        font-size: 0.8rem;
+        margin-top: 2rem;
+    }
+}

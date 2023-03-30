@@ -1,0 +1,32 @@
+//campañas 
+
+@import "../utilidades/extend";
+@import "../utilidades/mixin";
+
+.mainCampanas{
+    @include main(140vh, 0.5rem);
+    .contenidosP{
+        .containerUno{
+            @extend %containers;
+            .clap{
+                h2{
+                    @extend %textos;
+                }
+                p{
+                    @extend %textos;
+                }
+            }
+        }
+        .containerDos{
+            @extend %containers;
+            .laentrerios{
+                h2{
+                    @extend %textos;
+                }
+                p{
+                    @extend %textos;
+                }
+            }
+        }
+    }
+}

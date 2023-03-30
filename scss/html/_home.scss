@@ -1,0 +1,27 @@
+//estilos de home
+@import "../utilidades/mixin";
+
+.mainPrincipal{
+    @include main (115vh, 0.5rem);
+    .imagenes-conteiner{
+        @include grid(2rem, 0.5rem, 1rem, 4, 1);
+        justify-items: center;
+        margin-top: 4rem;
+        .carta{
+            .img{
+                #img-uno{
+                    @extend %img;
+                }
+                #img-dos{
+                    @extend %img;
+                }
+                #img-tres{
+                    @extend %img;
+                }
+                #img-cuatro{
+                    @extend %img;
+                }
+            }
+        }
+    }
+}

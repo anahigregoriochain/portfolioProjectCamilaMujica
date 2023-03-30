@@ -1,0 +1,28 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import "../scss/utilidades/mixin";
+
+/*estilos de body*/
+body{
+    background-image: url(../img/FullSizeRenderbyn.png);
+    margin: 0.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @import "../scss/html/header";
+    @import "../scss/html/banner";
+    @import "../scss/html/home";
+    @import "../scss/html/fotografia";
+    @import "../scss/html/campanias";
+    @import "../scss/html/footer";
+    
+}
+
+

@@ -1,0 +1,146 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*estilos de body*/
+body {
+  background-image: url(../img/FullSizeRenderbyn.png);
+  margin: 0.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*estilos de header*/ }
+  body header {
+    margin: auto;
+    padding: 1rem;
+    height: 6rem;
+    background: linear-gradient(to top, #6e6d6d95, #010101b4);
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    body header div a img {
+      height: 5%;
+      width: 10%; }
+    body header .navbar .container-fluid .offcanvas-header #offcanvasNavbarLabel {
+      font-size: 1.3rem;
+      font-family: 'Montserrat', sans-serif;
+      color: #260101; }
+    body header .navbar .container-fluid .offcanvas-body .navbar-nav .nav-item .nav-link {
+      font-size: 1rem;
+      color: #080808; }
+  body .encabezado .banner {
+    display: flex;
+    justify-content: center; }
+    body .encabezado .banner .bannerUno {
+      text-align: center; }
+      body .encabezado .banner .bannerUno #bannerP {
+        max-width: 50%;
+        height: auto;
+        object-fit: cover;
+        justify-items: center;
+        transition: 1s;
+        margin: 1rem; }
+  body .mainPrincipal {
+    height: 115vh;
+    margin: 0.5rem; }
+    body .mainPrincipal .imagenes-conteiner {
+      margin: 2rem;
+      padding: 0.5rem;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1;
+      justify-items: center;
+      margin-top: 4rem; }
+  body .mainPrincipal .imagenes-conteiner .carta .img #img-uno, body .mainPrincipal .imagenes-conteiner .carta .img #img-dos, body .mainPrincipal .imagenes-conteiner .carta .img #img-tres, body .mainPrincipal .imagenes-conteiner .carta .img #img-cuatro {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    grid-column: span 1;
+    grid-row: span 1;
+    transition: 1s; }
+  body .mainFotografia .fotografias .fotosUno, body .mainFotografia .fotografias .fotosDos, body .mainFotografia .fotografias .fotosTres, body .mainFotografia .fotografias .fotosCuatro, body .mainFotografia .fotografias .fotosCinco, body .mainFotografia .fotografias .fotosSeis, body .mainFotografia .fotografias .fotosSiete, body .mainFotografia .fotografias .fotosOcho {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-row: span 1;
+    grid-column: span 1; }
+  body .mainCampanas .contenidosP .containerUno .clap h2, body .mainCampanas .contenidosP .containerUno .clap p, body .mainCampanas .contenidosP .containerDos .laentrerios h2, body .mainCampanas .contenidosP .containerDos .laentrerios p {
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: #000000; }
+  body .mainCampanas .contenidosP .containerUno, body .mainCampanas .contenidosP .containerDos {
+    background-color: #9b939495;
+    margin: 3rem;
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1;
+    align-items: center; }
+  body .mainFotografia {
+    height: 190vh;
+    margin: 0.5rem; }
+    body .mainFotografia .fotografias {
+      margin: 1rem;
+      padding: 2rem;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 45%);
+      background-color: #ada5a4b4; }
+  body .mainPrincipal .imagenes-conteiner .carta .img #img-uno, body .mainPrincipal .imagenes-conteiner .carta .img #img-dos, body .mainPrincipal .imagenes-conteiner .carta .img #img-tres, body .mainPrincipal .imagenes-conteiner .carta .img #img-cuatro {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    grid-column: span 1;
+    grid-row: span 1;
+    transition: 1s; }
+  body .mainFotografia .fotografias .fotosUno, body .mainFotografia .fotografias .fotosDos, body .mainFotografia .fotografias .fotosTres, body .mainFotografia .fotografias .fotosCuatro, body .mainFotografia .fotografias .fotosCinco, body .mainFotografia .fotografias .fotosSeis, body .mainFotografia .fotografias .fotosSiete, body .mainFotografia .fotografias .fotosOcho {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-row: span 1;
+    grid-column: span 1; }
+  body .mainCampanas .contenidosP .containerUno .clap h2, body .mainCampanas .contenidosP .containerUno .clap p, body .mainCampanas .contenidosP .containerDos .laentrerios h2, body .mainCampanas .contenidosP .containerDos .laentrerios p {
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: #000000; }
+  body .mainCampanas .contenidosP .containerUno, body .mainCampanas .contenidosP .containerDos {
+    background-color: #9b939495;
+    margin: 3rem;
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1;
+    align-items: center; }
+  body .mainCampanas {
+    height: 140vh;
+    margin: 0.5rem; }
+  body footer {
+    height: auto;
+    background-color: #000000c1;
+    text-align: center;
+    color: whitesmoke;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.5rem;
+    text-decoration: none;
+    list-style: none; }
+    body footer .contactame {
+      color: whitesmoke;
+      font-size: 0.9rem; }
+    body footer .redesSociales a {
+      text-decoration: none; }
+      body footer .redesSociales a img {
+        width: 4%;
+        margin: 0.5rem; }
+    body footer .derechos {
+      font-size: 0.8rem;
+      margin-top: 2rem; }

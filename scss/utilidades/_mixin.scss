@@ -1,0 +1,36 @@
+//mixin
+
+@mixin flex-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin banner{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin grid ($margin, $pading, $gap, $columns, $rows){
+    margin: $margin;
+    padding: $pading;
+    display: grid;
+    gap: $gap;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-template-rows: $rows;
+}
+
+@mixin main($height, $margin){
+    height: $height;
+    margin: $margin;
+}
+
+@mixin textos{
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: #000000;
+}
+    
+
