@@ -1,0 +1,35 @@
+//main videos
+@import "../mediaQueris/media-queris";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+.mainVideos{
+    @include main(180vh, 0.5rem);
+
+    @include mobilmain-videos;
+    .subtituloVideos{
+        font-size: 0.8rem;
+        background-color: #b7acaa;
+        margin: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+    .videos{
+        @include gridVideos(170vh, 2rem, 2, 2, 40%);
+
+        @include mobile-videos;
+        .videoUno{
+            @extend %vreels;
+        }
+        .videoDos{
+            @extend %vreels;
+        }
+        .videoTres{
+            @extend %vreels;
+
+        }
+        .videoCuatro{
+            @extend %vreels;
+        }
+    }
+}

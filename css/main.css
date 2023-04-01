@@ -44,6 +44,14 @@ body {
   body .mainPrincipal {
     height: 115vh;
     margin: 0.5rem; }
+    @media screen and (max-width: 900px) {
+      body .mainPrincipal {
+        height: 105vh;
+        margin: 0.5rem; } }
+    @media screen and (max-width: 600px) {
+      body .mainPrincipal {
+        height: 100vh;
+        margin: 0.5rem; } }
     body .mainPrincipal .imagenes-conteiner {
       margin: 2rem;
       padding: 0.5rem;
@@ -53,6 +61,27 @@ body {
       grid-template-rows: 1;
       justify-items: center;
       margin-top: 4rem; }
+      @media screen and (max-width: 900px) {
+        body .mainPrincipal .imagenes-conteiner {
+          height: 85vh;
+          margin: 1rem;
+          margin-top: 2rem;
+          gap: 1rem;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: repeat(2, 35%); } }
+      @media screen and (max-width: 600px) {
+        body .mainPrincipal .imagenes-conteiner {
+          margin: 0.7rem;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(4, 20%); } }
+      @media screen and (max-width: 900px) {
+        body .mainPrincipal .imagenes-conteiner .carta {
+          width: 60%; } }
+      @media screen and (max-width: 600px) {
+        body .mainPrincipal .imagenes-conteiner .carta {
+          width: 60%; } }
   body .mainPrincipal .imagenes-conteiner .carta .img #img-uno, body .mainPrincipal .imagenes-conteiner .carta .img #img-dos, body .mainPrincipal .imagenes-conteiner .carta .img #img-tres, body .mainPrincipal .imagenes-conteiner .carta .img #img-cuatro {
     width: 95%;
     height: 95%;
@@ -72,18 +101,31 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
     color: #000000; }
-  body .mainCampanas .contenidosP .containerUno, body .mainCampanas .contenidosP .containerDos {
-    background-color: #9b939495;
-    margin: 3rem;
-    padding: 2rem;
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1;
-    align-items: center; }
+  body .mainCampanas .contenidosP .containerUno .contenedor-carousell .contenedor-carousel .row #carouselExampleFade .carousel-inner .carousel-item, body .mainCampanas .contenidosP .containerDos .contenedor-carousell .contenedor-carousel .row #carouselExampleFadee .carousel-inner .carousel-item {
+    display: block;
+    width: 100%;
+    height: 300px; }
+  body .mainCampanas .contenidosP .containerUno .contenedor-carousell .contenedor-carousel .row #carouselExampleFade .carousel-inner .carousel-item img, body .mainCampanas .contenidosP .containerDos .contenedor-carousell .contenedor-carousel .row #carouselExampleFadee .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  body .mainVideos .videos .videoUno, body .mainVideos .videos .videoDos, body .mainVideos .videos .videoTres, body .mainVideos .videos .videoCuatro {
+    width: 70%;
+    height: 100%;
+    object-fit: contain;
+    grid-row: span 1;
+    grid-column: span 1; }
   body .mainFotografia {
     height: 190vh;
     margin: 0.5rem; }
+    @media screen and (max-width: 900px) {
+      body .mainFotografia {
+        height: 135vh;
+        margin: 0.5rem; } }
+    @media screen and (max-width: 600px) {
+      body .mainFotografia {
+        height: 190vh;
+        margin: 0.5rem; } }
     body .mainFotografia .fotografias {
       margin: 1rem;
       padding: 2rem;
@@ -92,6 +134,36 @@ body {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 45%);
       background-color: #ada5a4b4; }
+      @media screen and (max-width: 900px) {
+        body .mainFotografia .fotografias {
+          margin: 1rem;
+          padding: 2rem;
+          background-color: #ada5a4b4;
+          display: grid;
+          gap: 1rem;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: 40% 40%; } }
+      @media screen and (max-width: 600px) {
+        body .mainFotografia .fotografias {
+          height: 175vh;
+          display: grid;
+          gap: 1rem;
+          padding: 1rem;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(6, 16%);
+          text-align: center; } }
+      @media screen and (max-width: 900px) {
+        body .mainFotografia .fotografias .fotosSiete {
+          display: none; } }
+      @media screen and (max-width: 600px) {
+        body .mainFotografia .fotografias .fotosSiete {
+          display: none; } }
+      @media screen and (max-width: 900px) {
+        body .mainFotografia .fotografias .fotosOcho {
+          display: none; } }
+      @media screen and (max-width: 600px) {
+        body .mainFotografia .fotografias .fotosOcho {
+          display: none; } }
   body .mainPrincipal .imagenes-conteiner .carta .img #img-uno, body .mainPrincipal .imagenes-conteiner .carta .img #img-dos, body .mainPrincipal .imagenes-conteiner .carta .img #img-tres, body .mainPrincipal .imagenes-conteiner .carta .img #img-cuatro {
     width: 95%;
     height: 95%;
@@ -111,18 +183,155 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
     color: #000000; }
-  body .mainCampanas .contenidosP .containerUno, body .mainCampanas .contenidosP .containerDos {
-    background-color: #9b939495;
-    margin: 3rem;
-    padding: 2rem;
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1;
-    align-items: center; }
+  body .mainCampanas .contenidosP .containerUno .contenedor-carousell .contenedor-carousel .row #carouselExampleFade .carousel-inner .carousel-item, body .mainCampanas .contenidosP .containerDos .contenedor-carousell .contenedor-carousel .row #carouselExampleFadee .carousel-inner .carousel-item {
+    display: block;
+    width: 100%;
+    height: 300px; }
+  body .mainCampanas .contenidosP .containerUno .contenedor-carousell .contenedor-carousel .row #carouselExampleFade .carousel-inner .carousel-item img, body .mainCampanas .contenidosP .containerDos .contenedor-carousell .contenedor-carousel .row #carouselExampleFadee .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  body .mainVideos .videos .videoUno, body .mainVideos .videos .videoDos, body .mainVideos .videos .videoTres, body .mainVideos .videos .videoCuatro {
+    width: 70%;
+    height: 100%;
+    object-fit: contain;
+    grid-row: span 1;
+    grid-column: span 1; }
   body .mainCampanas {
     height: 140vh;
     margin: 0.5rem; }
+    @media screen and (max-width: 600px) {
+      body .mainCampanas {
+        height: 170vh;
+        margin: 0.5rem; } }
+    body .mainCampanas .contenidosP .containerUno {
+      margin: 3rem;
+      padding: 2rem;
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1;
+      align-items: center;
+      background-color: #9b939495; }
+      @media screen and (max-width: 600px) {
+        body .mainCampanas .contenidosP .containerUno {
+          background-color: #9b939495;
+          height: 20hv;
+          display: flex;
+          flex-direction: column;
+          margin: 2rem;
+          text-align: center; } }
+      body .mainCampanas .contenidosP .containerUno .contenedor-carousell .contenedor-carousel {
+        text-align: center; }
+    body .mainCampanas .contenidosP .containerDos {
+      margin: 3rem;
+      padding: 2rem;
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1;
+      align-items: center;
+      background-color: #9b939495; }
+      @media screen and (max-width: 600px) {
+        body .mainCampanas .contenidosP .containerDos {
+          background-color: #9b939495;
+          height: 20hv;
+          display: flex;
+          flex-direction: column;
+          margin: 2rem;
+          text-align: center; } }
+      body .mainCampanas .contenidosP .containerDos .contenedor-carousell .contenedor-carousel {
+        text-align: center; }
+  body .mainPrincipal .imagenes-conteiner .carta .img #img-uno, body .mainPrincipal .imagenes-conteiner .carta .img #img-dos, body .mainPrincipal .imagenes-conteiner .carta .img #img-tres, body .mainPrincipal .imagenes-conteiner .carta .img #img-cuatro {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    grid-column: span 1;
+    grid-row: span 1;
+    transition: 1s; }
+  body .mainFotografia .fotografias .fotosUno, body .mainFotografia .fotografias .fotosDos, body .mainFotografia .fotografias .fotosTres, body .mainFotografia .fotografias .fotosCuatro, body .mainFotografia .fotografias .fotosCinco, body .mainFotografia .fotografias .fotosSeis, body .mainFotografia .fotografias .fotosSiete, body .mainFotografia .fotografias .fotosOcho {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-row: span 1;
+    grid-column: span 1; }
+  body .mainCampanas .contenidosP .containerUno .clap h2, body .mainCampanas .contenidosP .containerUno .clap p, body .mainCampanas .contenidosP .containerDos .laentrerios h2, body .mainCampanas .contenidosP .containerDos .laentrerios p {
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: #000000; }
+  body .mainCampanas .contenidosP .containerUno .contenedor-carousell .contenedor-carousel .row #carouselExampleFade .carousel-inner .carousel-item, body .mainCampanas .contenidosP .containerDos .contenedor-carousell .contenedor-carousel .row #carouselExampleFadee .carousel-inner .carousel-item {
+    display: block;
+    width: 100%;
+    height: 300px; }
+  body .mainCampanas .contenidosP .containerUno .contenedor-carousell .contenedor-carousel .row #carouselExampleFade .carousel-inner .carousel-item img, body .mainCampanas .contenidosP .containerDos .contenedor-carousell .contenedor-carousel .row #carouselExampleFadee .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  body .mainVideos .videos .videoUno, body .mainVideos .videos .videoDos, body .mainVideos .videos .videoTres, body .mainVideos .videos .videoCuatro {
+    width: 70%;
+    height: 100%;
+    object-fit: contain;
+    grid-row: span 1;
+    grid-column: span 1; }
+  body .mainVideos {
+    height: 180vh;
+    margin: 0.5rem; }
+    @media screen and (max-width: 600px) {
+      body .mainVideos {
+        height: 200vh;
+        margin: 0.5rem; } }
+    body .mainVideos .subtituloVideos {
+      font-size: 0.8rem;
+      background-color: #b7acaa;
+      margin: 1rem;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center; }
+    body .mainVideos .videos {
+      height: 170vh;
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 40%);
+      justify-items: center;
+      text-align: center; }
+      @media screen and (max-width: 600px) {
+        body .mainVideos .videos {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(4, 25%); } }
+  body .mainAcerca {
+    height: 100vh;
+    margin: 0.5rem; }
+    @media screen and (max-width: 600px) {
+      body .mainAcerca {
+        height: 110vh;
+        margin: 0.5rem; } }
+    body .mainAcerca .contenedorAcerca {
+      background-color: #bfb0a3ac;
+      display: flex;
+      flex-direction: row;
+      margin: 2rem;
+      align-items: center; }
+      @media screen and (max-width: 600px) {
+        body .mainAcerca .contenedorAcerca {
+          background-color: #bfb0a394;
+          height: 45hv;
+          display: flex;
+          flex-direction: column;
+          margin: 2rem;
+          text-align: center; } }
+      body .mainAcerca .contenedorAcerca .imagenAcerca .imgAcerca {
+        justify-content: center;
+        width: 60%;
+        margin: 1rem; }
+      body .mainAcerca .contenedorAcerca .contenidoAcerca {
+        text-align: center; }
+        body .mainAcerca .contenedorAcerca .contenidoAcerca h2 {
+          font-size: 1.3rem; }
+          body .mainAcerca .contenedorAcerca .contenidoAcerca h2 span {
+            display: block; }
   body footer {
     height: auto;
     background-color: #000000c1;

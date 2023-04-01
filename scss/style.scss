@@ -1,3 +1,4 @@
+
 /* reset */
 
 *{
@@ -5,7 +6,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 
 @import "../scss/utilidades/mixin";
 
@@ -21,8 +21,9 @@ body{
     @import "../scss/html/home";
     @import "../scss/html/fotografia";
     @import "../scss/html/campanias";
-    @import "../scss/html/footer";
-    
+    @import "../scss/html/videos";
+    @import "../scss/html/acerca";
+    @import "../scss/html/footer";    
 }
 
 

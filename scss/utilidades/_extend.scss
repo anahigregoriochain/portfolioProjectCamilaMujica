@@ -1,6 +1,7 @@
 //extend
 
 @import "../utilidades/mixin";
+@import "../mediaQueris/media-queris";
 
 %img{
     width: 95%;
@@ -23,8 +24,15 @@
     @include textos;
 }
 
-%containers{
-    background-color: #9b939495;
-    @include grid(3rem, 2rem, 2rem, 2, 1);
-    align-items: center;
+
+%item{
+    @include itemCarousel;
+}
+
+%imgca{
+    @include imgCarouse;
+}
+
+%vreels{
+    @include reels;
 }

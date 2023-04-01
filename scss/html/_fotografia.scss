@@ -1,13 +1,22 @@
 //estilos fotografia
-
+@import "../mediaQueris/media-queris";
 @import "../utilidades/mixin";
 @import "../utilidades/extend";
 
 .mainFotografia{
     @include main(190vh, 0.5rem);
+
+    @include tabletmain-fotos;
+
+    @include mobilemain-fotos;
     .fotografias{
         @include grid(1rem, 2rem, 1rem, 4 ,repeat(2, 45%));
         background-color: #ada5a4b4;
+        
+        @include tablet-fotos;
+
+        @include mobile-fotos;
+
         .fotosUno{
             @extend %fotografias;
         }
@@ -28,9 +37,13 @@
         }
         .fotosSiete{
             @extend %fotografias;
+            @include tablet-fotoss;
+            @include mobile-fotoss;
         }
         .fotosOcho{
             @extend %fotografias;
+            @include tablet-fotoss;
+            @include mobile-fotoss;
         }
     }
 }

@@ -1,25 +1,60 @@
 //estilos de home
+@import "../mediaQueris/media-queris";
 @import "../utilidades/mixin";
+
 
 .mainPrincipal{
     @include main (115vh, 0.5rem);
+
+    @include tabletmain-home;
+
+    @include mobilemain-home;
     .imagenes-conteiner{
         @include grid(2rem, 0.5rem, 1rem, 4, 1);
         justify-items: center;
         margin-top: 4rem;
+
+        @include tablet-conteiner{
+            height: 85vh;
+            margin: 1rem;
+            margin-top: 2rem;
+            gap: 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(2, 35%);
+        }
+
+
+        @include mobile-conteiner{
+            margin: 0.7rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 20%);
+        }
         .carta{
+            @include tablet-conteiner{
+                width: 60%;
+            }
+
+            @include mobile-conteiner{
+                width: 60%;
+            }
+
             .img{
                 #img-uno{
                     @extend %img;
                 }
                 #img-dos{
                     @extend %img;
+
                 }
                 #img-tres{
                     @extend %img;
+
                 }
                 #img-cuatro{
                     @extend %img;
+
                 }
             }
         }

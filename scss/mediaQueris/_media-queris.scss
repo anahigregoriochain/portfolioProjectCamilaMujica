@@ -1,0 +1,142 @@
+@import "../utilidades/mixin";
+
+//mq
+
+//mq tablet home
+
+@mixin tabletmain-home{
+    @media screen and (max-width: 900px){
+        @include main(105vh, 0.5rem);
+    }    
+}
+
+@mixin tablet-conteiner{
+    @media screen and (max-width: 900px){
+        @content;
+    }
+}
+
+//mq tablet fotografias
+
+@mixin tabletmain-fotos{
+    @media screen and (max-width: 900px){
+        @include main(135vh, 0.5rem);
+    }
+}
+
+@mixin tablet-fotos{
+    @media screen and (max-width: 900px){
+        margin: 1rem;
+        padding: 2rem;
+        background-color: #ada5a4b4;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows: 40% 40%;
+    }
+}
+
+@mixin tablet-fotoss{
+    @media screen and (max-width: 900px){
+        display: none;
+    }
+}
+
+
+
+
+//mq mobile
+
+//mq mobile home
+
+@mixin mobilemain-home{
+    @media screen and (max-width: 600px){
+        @include main(100vh, 0.5rem);
+    }
+}
+
+@mixin mobile-conteiner{
+    @media screen and (max-width: 600px){
+        @content;
+    }
+}
+
+//mq mobile fotografias
+
+@mixin mobilemain-fotos{
+    @media screen and (max-width: 600px){
+        @include main(190vh, 0.5rem);
+    }
+}
+
+@mixin mobile-fotos{
+    @media screen and (max-width: 600px){
+        height: 175vh;
+        display: grid;
+        gap: 1rem;
+        padding: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 16%);
+        text-align: center;
+    }
+}
+@mixin mobile-fotoss{
+    @media screen and (max-width: 600px){
+        display: none;
+    }
+}
+
+//mq mobile campañas
+
+@mixin mobilemain-campanias{
+    @media screen and (max-width: 600px){
+        @include main(170vh, 0.5rem);
+    }
+}
+
+@mixin mobile-containers{
+    @media screen and (max-width: 600px){
+        background-color: #9b939495;
+        height: 20hv;
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        text-align: center;
+    }
+}
+
+//mq mobile acerca
+
+@mixin mobilemain-acerca{
+    @media screen and (max-width: 600px){
+        @include main(110vh, 0.5rem);
+    }
+}
+
+@mixin mobile-flex{
+    @media screen and (max-width: 600px){
+        background-color: #bfb0a394;
+        height: 45hv;
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        text-align: center;
+    }
+}
+
+//mq mobile videos
+
+@mixin mobilmain-videos{
+    @media screen and (max-width: 600px){
+        @include main(200vh, 0.5rem);
+    }
+}
+
+@mixin mobile-videos{
+    @media screen and (max-width: 600px){
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 25%);
+    }
+}
+

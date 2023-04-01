@@ -1,13 +1,21 @@
-//campañas 
 
-@import "../utilidades/extend";
+//campañas 
+@import "../mediaQueris/media-queris";
 @import "../utilidades/mixin";
+@import "../utilidades/extend";
+@import "../utilidades/variables";
 
 .mainCampanas{
     @include main(140vh, 0.5rem);
+
+    @include mobilemain-campanias;
     .contenidosP{
         .containerUno{
-            @extend %containers;
+            @include grid(3rem, 2rem, 2rem, 2, 1);
+            align-items: center;
+            background-color: #9b939495;
+
+            @include mobile-containers;
             .clap{
                 h2{
                     @extend %textos;
@@ -16,9 +24,47 @@
                     @extend %textos;
                 }
             }
+            .contenedor-carousell{
+                .contenedor-carousel{
+                    text-align: center;
+                    .row{
+                        #carouselExampleFade{
+                            .carousel-inner{
+                                .carousel-item{
+                                    @extend %item;
+                                    img{
+                                        @extend %imgca;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
         .containerDos{
-            @extend %containers;
+            @include grid(3rem, 2rem, 2rem, 2, 1);
+            align-items: center;
+            background-color: #9b939495;
+
+            @include mobile-containers;
+            .contenedor-carousell{
+                .contenedor-carousel{
+                    text-align: center;
+                    .row{
+                        #carouselExampleFadee{
+                            .carousel-inner{
+                                .carousel-item{
+                                    @extend %item;
+                                    img{
+                                        @extend %imgca;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             .laentrerios{
                 h2{
                     @extend %textos;
