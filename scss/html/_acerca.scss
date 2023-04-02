@@ -3,7 +3,7 @@
 @import "../utilidades/mixin";
 
 .mainAcerca{
-    @include main (100vh, 0.5rem);
+    @include main (70vh, 0.5rem);
 
     @include mobilemain-acerca;
     .contenedorAcerca{
@@ -13,12 +13,13 @@
         .imagenAcerca{
             .imgAcerca{
                 justify-content: center;
-                width: 60%;
+                width: 100%;
                 margin: 1rem;
             }
         }
         .contenidoAcerca{
             text-align: center;
+            margin: 2rem;
             h2{
                 font-size: 1.3rem;
                 span{

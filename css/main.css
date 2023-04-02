@@ -26,9 +26,36 @@ body {
       font-size: 1.3rem;
       font-family: 'Montserrat', sans-serif;
       color: #260101; }
-    body header .navbar .container-fluid .offcanvas-body .navbar-nav .nav-item .nav-link {
-      font-size: 1rem;
-      color: #080808; }
+    body header .navbar .container-fluid .offcanvas-body .navbar-nav .nav-item {
+      margin: 1rem;
+      position: relative; }
+      body header .navbar .container-fluid .offcanvas-body .navbar-nav .nav-item :before {
+        width: 90%; }
+      body header .navbar .container-fluid .offcanvas-body .navbar-nav .nav-item :hover:before {
+        content: "";
+        border-bottom: 2px solid #6d402f;
+        position: absolute;
+        bottom: 1px;
+        width: 90%;
+        right: 0;
+        transition: 0.2s;
+        opacity: 1; }
+      body header .navbar .container-fluid .offcanvas-body .navbar-nav .nav-item :after {
+        width: 50%; }
+      body header .navbar .container-fluid .offcanvas-body .navbar-nav .nav-item :hover:after {
+        content: "";
+        border-bottom: 2px solid #6d402f;
+        position: absolute;
+        bottom: -5px;
+        width: 70%;
+        left: 0;
+        transition: 0.2s;
+        opacity: 2;
+        width: 50%; }
+      body header .navbar .container-fluid .offcanvas-body .navbar-nav .nav-item .nav-link {
+        padding-right: 10px;
+        font-size: 1rem;
+        color: #080808; }
   body .encabezado .banner {
     display: flex;
     justify-content: center; }
@@ -39,7 +66,6 @@ body {
         height: auto;
         object-fit: cover;
         justify-items: center;
-        transition: 1s;
         margin: 1rem; }
   body .mainPrincipal {
     height: 115vh;
@@ -82,6 +108,12 @@ body {
       @media screen and (max-width: 600px) {
         body .mainPrincipal .imagenes-conteiner .carta {
           width: 60%; } }
+      body .mainPrincipal .imagenes-conteiner .carta .img {
+        transition: 1s; }
+        body .mainPrincipal .imagenes-conteiner .carta .img :hover {
+          transform: scale(1.2);
+          opacity: 100%;
+          transition: 1s; }
   body .mainPrincipal .imagenes-conteiner .carta .img #img-uno, body .mainPrincipal .imagenes-conteiner .carta .img #img-dos, body .mainPrincipal .imagenes-conteiner .carta .img #img-tres, body .mainPrincipal .imagenes-conteiner .carta .img #img-cuatro {
     width: 95%;
     height: 95%;
@@ -306,17 +338,17 @@ body {
     margin: 0.5rem; }
     @media screen and (max-width: 600px) {
       body .mainAcerca {
-        height: 110vh;
+        height: 150vh;
         margin: 0.5rem; } }
     body .mainAcerca .contenedorAcerca {
-      background-color: #bfb0a3ac;
+      background-color: #bfb0a3dd;
       display: flex;
       flex-direction: row;
       margin: 2rem;
       align-items: center; }
       @media screen and (max-width: 600px) {
         body .mainAcerca .contenedorAcerca {
-          background-color: #bfb0a394;
+          background-color: #bfb0a3dd;
           height: 45hv;
           display: flex;
           flex-direction: column;
@@ -327,7 +359,8 @@ body {
         width: 60%;
         margin: 1rem; }
       body .mainAcerca .contenedorAcerca .contenidoAcerca {
-        text-align: center; }
+        text-align: center;
+        margin: 2rem; }
         body .mainAcerca .contenedorAcerca .contenidoAcerca h2 {
           font-size: 1.3rem; }
           body .mainAcerca .contenedorAcerca .contenidoAcerca h2 span {

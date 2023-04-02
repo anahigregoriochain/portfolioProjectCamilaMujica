@@ -33,7 +33,39 @@ header{
             .offcanvas-body{
                 .navbar-nav{
                     .nav-item{
+                        margin: 1rem;
+                        position: relative;
+                        :before{
+                            width: 90%;
+                        }
+                        :hover:before{
+                            content: "";
+                            border-bottom: 2px solid #6d402f;
+                            position: absolute;
+                            bottom: 1px;
+                            width: 90%;
+                            right: 0;
+                            transition: 0.2s;
+                            opacity: 1;
+                        }
+
+                        :after{
+                            width: 50%;
+                        }
+                        :hover:after{
+                            content: "";
+                            border-bottom: 2px solid #6d402f;;
+                            position: absolute;
+                            bottom: -5px;
+                            width: 70%;
+                            left: 0;
+                            transition: 0.2s;
+                            opacity: 2;
+                            width: 50%;
+                        }
+
                         .nav-link{
+                            padding-right: 10px;
                             font-size: 1rem;
                             color: nth($color-nav, 2);
                         }

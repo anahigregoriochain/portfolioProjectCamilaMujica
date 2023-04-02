@@ -109,13 +109,13 @@
 
 @mixin mobilemain-acerca{
     @media screen and (max-width: 600px){
-        @include main(110vh, 0.5rem);
+        @include main(150vh, 0.5rem);
     }
 }
 
 @mixin mobile-flex{
     @media screen and (max-width: 600px){
-        background-color: #bfb0a394;
+        background-color: #bfb0a3dd;
         height: 45hv;
         display: flex;
         flex-direction: column;
