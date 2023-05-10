@@ -21,7 +21,7 @@ body {
     align-items: center; }
     body header div a img {
       height: 5%;
-      width: 10%; }
+      width: 15%; }
     body header .navbar .container-fluid .offcanvas-header #offcanvasNavbarLabel {
       font-size: 1.3rem;
       font-family: 'Montserrat', sans-serif;
@@ -141,7 +141,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover; }
-  body .mainVideos .videos .videoUno, body .mainVideos .videos .videoDos, body .mainVideos .videos .videoTres, body .mainVideos .videos .videoCuatro {
+  body .mainVideos .videos .videoUno, body .mainVideos .videos .videoDos, body .mainVideos .videos .videoTres, body .mainVideos .videos .videoCuatro, body .mainVideos .videos iframe {
     width: 70%;
     height: 100%;
     object-fit: contain;
